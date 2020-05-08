@@ -6,7 +6,7 @@
             "partnumber": "Ennnnn_01",
             "publisheddate": "03/10/2020",
             "contentid": "12nnnn",
-            "filename": "https://github.com/laxmi-oss/Converged-Database/blob/master/intro/intro.md"
+            "filename": "https://github.com/laxmi-oss/Converged-Database/tree/master/intro/intro.md"
         },
         {         
             "title": "Env Setup",
@@ -14,7 +14,7 @@
             "partnumber": "Ennnnn_01",
             "publisheddate": "03/10/2020",
             "contentid": "12nnnn",
-            "filename": "https://github.com/laxmi-oss/Converged-Database/blob/master/intro/setup.md"
+            "filename": "https://github.com/laxmi-oss/Converged-Database/tree/master/intro/setup.md"
         }
             ]
 }
