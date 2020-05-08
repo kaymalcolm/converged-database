@@ -18,7 +18,7 @@
       </copy>
     ````
   
-  ![](../images/select_count.PNG " ")
+  ![](../json/images/select_count.PNG " ")
     
    **Note:** Oracle database allows a simple ‘dotted’ notation to be used to perform a limited set of operations on columns containing JSON.In order to use the dotted notation, a table alias must be assigned to the table in the FROM clause, and any reference to the JSON column must be prefixed with the assigned alias. All data is returned as VARCHAR2(4000).
 
