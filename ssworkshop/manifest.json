@@ -2,51 +2,43 @@
     "tutorials": [
         {         
             "title": "Introduction and Overview",
-            "description": "Introduction to Multitenant Workshop",
+            "description": "Introduction to JSON Workshop",
             "partnumber": "Ennnnn_01",
             "publisheddate": "03/10/2020",
             "contentid": "12nnnn",
-            "filename": "../intro/intro.md"
+            "filename": "../../intro/intro_json.md"
         },
         {         
-            "title": "Lab 1: Login to Oracle Cloud",
-            "description": "Login to Oracle Cloud",
+            "title": " Env Setup",
+            "description": "Env Setup",
             "partnumber": "Ennnnn_01",
             "publisheddate": "03/10/2020",
             "contentid": "12nnnn",
-            "filename": "https://raw.githubusercontent.com/oracle/learning-library/master/common/labs/cloud-login/cloud-login-ssworkshop.md"
+            "filename": "/labs/setup.md"
         },
         {         
-            "title": "Lab 2: Generate SSH Key",
-            "description": "Generate SSH Key",
+            "title": "Lab:1 Load JSON Data",
+            "description": "",
             "partnumber": "Ennnnn_01",
             "publisheddate": "03/10/2020",
             "contentid": "12nnnn",
-            "filename": "https://raw.githubusercontent.com/oracle/learning-library/master/common/labs/generate-ssh-key/generate-ssh-keys.md"
+            "filename": "../../labs/load_json.md"
         },
         {         
-            "title": "Lab 3: Workshop Setup",
-            "description": "Setup Multitenant Workshop in Self Service Workshop",
+            "title": "Lab:2 Insert and Update JSON Data",
+            "description": "",
             "partnumber": "Ennnnn_01",
             "publisheddate": "03/10/2020",
             "contentid": "12nnnn",
-            "filename": "./../setup/ssworkshop-setup.md"
+            "filename": "../../labs/insert_json.md"
         },
         {         
-            "title": "Lab 4: Multitenant Basics",
-            "description": "Clone, Plug and Drop Pluggable Databases",
+            "title": "Lab:3 Usage of JSON Functions",
+            "description": "",
             "partnumber": "Ennnnn_01",
             "publisheddate": "03/10/2020",
             "contentid": "12nnnn",
-            "filename": "./../clone-plug-drop/clone-plug-drop.md"
-        },
-        {         
-            "title": "Lab 5: Application Containers",
-            "description": "Using Application Containers with Multitenant",
-            "partnumber": "Ennnnn_01",
-            "publisheddate": "03/10/2020",
-            "contentid": "12nnnn",
-            "filename": "./../app-containers/app-containers.md"
+            "filename": "../../labs/json_fun.md"
         }
-    ]
+                 ]
 }
