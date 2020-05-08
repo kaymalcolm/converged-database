@@ -14,7 +14,7 @@
             "partnumber": "Ennnnn_01",
             "publisheddate": "03/10/2020",
             "contentid": "12nnnn",
-            "filename": "../../setup_xml.md"
+            "filename": "../../labs/setup_xml.md"
         },
         {         
             "title": "Lab:1 Query XML Content",
