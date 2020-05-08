@@ -50,8 +50,8 @@ Click here to request your trial account: [https://www.oracle.com/cloud/free](ht
 
 ## Workshops
 - [JSON](https://laxmi-oss.github.io/Converged-Database/workshops/json-freetier/)
-- [XML](http://127.0.0.1:5500/freetier/XML/freetier/index.html?lab=introduction-overview)
-- [SPATIAL](http://127.0.0.1:5500/freetier/SPATIAL/freetier/index.html?lab=introduction-overview)
+- [XML](https://laxmi-oss.github.io/Converged-Database/workshops/xml-freetier/)
+- [SPATIAL](https://laxmi-oss.github.io/Converged-Database/workshops/spatial-freetier/)
 
 
 ## Product Pages
