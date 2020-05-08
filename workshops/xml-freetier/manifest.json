@@ -6,7 +6,7 @@
             "partnumber": "Ennnnn_01",
             "publisheddate": "03/10/2020",
             "contentid": "12nnnn",
-            "filename": "/intro/intro_xml.md"
+            "filename": "../../xml/intro-xml.md"
         },
         {         
             "title": "Env Setup",
@@ -14,7 +14,7 @@
             "partnumber": "Ennnnn_01",
             "publisheddate": "03/10/2020",
             "contentid": "12nnnn",
-            "filename": "/labs/setup_xml.md"
+            "filename": "../../setup_xml.md"
         },
         {         
             "title": "Lab:1 Query XML Content",
@@ -22,7 +22,7 @@
             "partnumber": "Ennnnn_01",
             "publisheddate": "03/10/2020",
             "contentid": "12nnnn",
-            "filename": "/labs/xml_query.md"
+            "filename": "../../labs/xml_query.md"
         },
         {         
             "title": "Lab:2 Insert and Update XML Data",
@@ -30,7 +30,7 @@
             "partnumber": "Ennnnn_01",
             "publisheddate": "03/10/2020",
             "contentid": "12nnnn",
-            "filename": "/labs/xml_insert.md"
+            "filename": "../../labs/xml_insert.md"
         },
         {         
             "title": "Lab:2 Usage of XML Function",
@@ -38,7 +38,7 @@
             "partnumber": "Ennnnn_01",
             "publisheddate": "03/10/2020",
             "contentid": "12nnnn",
-            "filename": "/labs/xml_fun.md"
+            "filename": "../../labs/xml_fun.md"
         }
                  ]
 }
