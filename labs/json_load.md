@@ -100,8 +100,8 @@
     </copy>
     ````
 
-  ![](../json/images/purchase_order_count.PNG)
-  ![](../json/images/purchase_order_count1.PNG)
+  ![](/json/images/purchase_order_count.PNG)
+  ![](/json/images/purchase_order_count1.PNG)
 
 
 See an issue?  Please open up a request [here](https://github.com/oracle/learning-library/issues).
