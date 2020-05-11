@@ -109,7 +109,7 @@
    -  we use sdo-geom.validate-geometry() to insert only valid geometries. 
 
      
- 8. Insert Data into **CUSTOMERS** Table
+8. Insert Data into **CUSTOMERS** Table
 
     ````
     <copy>
@@ -121,7 +121,7 @@
     </copy>
     ````
     
- 9. Manually load **warehouses** using the **SDO-GEOMETRY** constructor.
+9. Manually load **warehouses** using the **SDO-GEOMETRY** constructor.
 
     ````
     <copy>
