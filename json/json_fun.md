@@ -115,28 +115,27 @@
     ````
     <copy>
     create or replace view PURCHASE_ORDER_MASTER_VIEW
-AS SELECT M.* FROM PURCHASE_ORDER p,
-JSON_TABLE(p.PO_DOCUMENT,
-'$' 
-columns
-PO_NUMBER NUMBER(10) PATH '$.PONumber',
-REFERENCE VARCHAR2(30 CHAR) PATH '$.Reference',
-REQUESTOR VARCHAR(128) PATH '$.Requestor',
-USERID VARCHAR2(10 CHAR) PATH '$.User',
-COSTCENTER VARCHAR2(16) PATH '$.CostCenter',
-SHIP_TO_NAME VARCHAR2(20 CHAR) PATH '$.ShippingInstructions.name',
-SHIP_TO_STREET VARCHAR2(32 CHAR) PATH '$.ShippingInstructions.Address.street',
-SHIP_TO_CITY VARCHAR2(32 CHAR) PATH '$.ShippingInstructions.Address.city',
-SHIP_TO_COUNTY VARCHAR2(32 CHAR) PATH '$.ShippingInstructions.Address.county',
-SHIP_TO_POSTCODE VARCHAR2(32 CHAR) PATH '$.ShippingInstructions.Address.postcode',
-SHIP_TO_STATE VARCHAR2(2 CHAR) PATH '$.ShippingInstructions.Address.state',
-SHIP_TO_PROVINCE VARCHAR2(2 CHAR) PATH '$.ShippingInstructions.Address.province',
-SHIP_TO_ZIP VARCHAR2(8 CHAR) PATH '$.ShippingInstructions.Address.zipCode',
-SHIP_TO_COUNTRY VARCHAR2(32 CHAR) PATH '$.ShippingInstructions.Address.country',
-SHIP_TO_PHONE VARCHAR2(24 CHAR) PATH '$.ShippingInstructions.Phone[0].number',
-INSTRUCTIONS VARCHAR2(2048 CHAR) PATH '$.SpecialInstructions') m
-/
-
+    AS SELECT M.* FROM PURCHASE_ORDER p,
+    JSON_TABLE(p.PO_DOCUMENT,
+     '$' 
+    columns
+    PO_NUMBER NUMBER(10) PATH '$.PONumber',
+    REFERENCE VARCHAR2(30 CHAR) PATH '$.Reference',
+    REQUESTOR VARCHAR(128) PATH '$.Requestor',
+     USERID VARCHAR2(10 CHAR) PATH '$.User',
+    COSTCENTER VARCHAR2(16) PATH '$.CostCenter',
+    SHIP_TO_NAME VARCHAR2(20 CHAR) PATH '$.ShippingInstructions.name',
+    SHIP_TO_STREET VARCHAR2(32 CHAR) PATH '$.ShippingInstructions.Address.street',
+     SHIP_TO_CITY VARCHAR2(32 CHAR) PATH '$.ShippingInstructions.Address.city',
+     SHIP_TO_COUNTY VARCHAR2(32 CHAR) PATH '$.ShippingInstructions.Address.county',
+   SHIP_TO_POSTCODE VARCHAR2(32 CHAR) PATH '$.ShippingInstructions.Address.postcode',
+    SHIP_TO_STATE VARCHAR2(2 CHAR) PATH '$.ShippingInstructions.Address.state',
+     SHIP_TO_PROVINCE VARCHAR2(2 CHAR) PATH '$.ShippingInstructions.Address.province',
+    SHIP_TO_ZIP VARCHAR2(8 CHAR) PATH '$.ShippingInstructions.Address.zipCode',
+    SHIP_TO_COUNTRY VARCHAR2(32 CHAR) PATH '$.ShippingInstructions.Address.country',
+    SHIP_TO_PHONE VARCHAR2(24 CHAR) PATH '$.ShippingInstructions.Phone[0].number',
+    INSTRUCTIONS VARCHAR2(2048 CHAR) PATH '$.SpecialInstructions') m
+    /
 
       </copy>
     ````
@@ -148,42 +147,41 @@ INSTRUCTIONS VARCHAR2(2048 CHAR) PATH '$.SpecialInstructions') m
     ````
     <copy>
    create or replace view PURCHASE_ORDER_DETAIL_VIEW
-AS
-SELECT D.* FROM PURCHASE_ORDER p,
-JSON_TABLE(
-p.PO_DOCUMENT,
-'$' 
-columns (
-PO_NUMBER NUMBER(10) PATH '$.PONumber',
-REFERENCE VARCHAR2(30 CHAR) PATH '$.Reference',
-REQUESTOR VARCHAR(128) PATH '$.Requestor',
-USERID VARCHAR2(10 CHAR) PATH '$.User',
-COSTCENTER VARCHAR2(16) PATH '$.CostCenter',
-SHIP_TO_NAME VARCHAR2(20 CHAR) PATH '$.ShippingInstructions.name',
-SHIP_TO_STREET VARCHAR2(32 CHAR) PATH '$.ShippingInstructions.Address.street',
-SHIP_TO_CITY VARCHAR2(32 CHAR) PATH '$.ShippingInstructions.Address.city',
-SHIP_TO_COUNTY VARCHAR2(32 CHAR) PATH '$.ShippingInstructions.Address.county',
-SHIP_TO_POSTCODE VARCHAR2(32 CHAR) PATH '$.ShippingInstructions.Address.postcode',
-SHIP_TO_STATE VARCHAR2(2 CHAR) PATH '$.ShippingInstructions.Address.state',
-SHIP_TO_PROVINCE VARCHAR2(2 CHAR) PATH '$.ShippingInstructions.Address.province',
-SHIP_TO_ZIP VARCHAR2(8 CHAR) PATH '$.ShippingInstructions.Address.zipCode',
-SHIP_TO_COUNTRY VARCHAR2(32 CHAR) PATH '$.ShippingInstructions.Address.country',
-SHIP_TO_PHONE VARCHAR2(24 CHAR) PATH '$.ShippingInstructions.Phone[0].number',
-INSTRUCTIONS VARCHAR2(2048 CHAR) PATH '$.SpecialInstructions',
-NESTED PATH '$.LineItems[*]'
-columns (
-  ITEMNO        NUMBER(38) PATH '$.ItemNumber',
-  DESCRIPTION   VARCHAR2(256 CHAR) PATH '$.Part.Description',
-  UPCCODE       VARCHAR2(14 CHAR) PATH '$.Part.UPCCode',
-  QUANTITY      NUMBER(12,4) PATH '$.Quantity',
-  UNITPRICE     NUMBER(14,2) PATH '$.Part.UnitPrice'
-)
-)
-) d
-/
+    AS
+    SELECT D.* FROM PURCHASE_ORDER p,
+   JSON_TABLE(
+    p.PO_DOCUMENT,
+   '$' 
+    columns (
+    PO_NUMBER NUMBER(10) PATH '$.PONumber',
+    REFERENCE VARCHAR2(30 CHAR) PATH '$.Reference',
+    REQUESTOR VARCHAR(128) PATH '$.Requestor',
+    USERID VARCHAR2(10 CHAR) PATH '$.User',
+    COSTCENTER VARCHAR2(16) PATH '$.CostCenter',
+    SHIP_TO_NAME VARCHAR2(20 CHAR) PATH '$.ShippingInstructions.name',
+    SHIP_TO_STREET VARCHAR2(32 CHAR) PATH '$.ShippingInstructions.Address.street',
+    SHIP_TO_CITY VARCHAR2(32 CHAR) PATH '$.ShippingInstructions.Address.city',
+    SHIP_TO_COUNTY VARCHAR2(32 CHAR) PATH '$.ShippingInstructions.Address.county',
+    SHIP_TO_POSTCODE VARCHAR2(32 CHAR) PATH '$.ShippingInstructions.Address.postcode',
+    SHIP_TO_STATE VARCHAR2(2 CHAR) PATH '$.ShippingInstructions.Address.state',
+    SHIP_TO_PROVINCE VARCHAR2(2 CHAR) PATH '$.ShippingInstructions.Address.province',
+    SHIP_TO_ZIP VARCHAR2(8 CHAR) PATH '$.ShippingInstructions.Address.zipCode',
+     SHIP_TO_COUNTRY VARCHAR2(32 CHAR) PATH '$.ShippingInstructions.Address.country',
+    SHIP_TO_PHONE VARCHAR2(24 CHAR) PATH '$.ShippingInstructions.Phone[0].number',
+    INSTRUCTIONS VARCHAR2(2048 CHAR) PATH '$.SpecialInstructions',
+    NESTED PATH '$.LineItems[*]'
+    columns (
+      ITEMNO        NUMBER(38) PATH '$.ItemNumber',
+     DESCRIPTION   VARCHAR2(256 CHAR) PATH '$.Part.Description',
+    UPCCODE       VARCHAR2(14 CHAR) PATH '$.Part.UPCCode',
+   QUANTITY      NUMBER(12,4) PATH '$.Quantity',
+   UNITPRICE     NUMBER(14,2) PATH '$.Part.UnitPrice'
+    )
+    )
+    ) d
+     /
 
-
-      </copy>
+     </copy>
     ````
   
   ![](./images/json_fun_view2.PNG " ")  
@@ -194,11 +192,11 @@ columns (
     ````
     <copy>
     select PO_NUMBER, REFERENCE, INSTRUCTIONS, ITEMNO, UPCCODE, DESCRIPTION, QUANTITY, UNITPRICE
-  from PURCHASE_ORDER_DETAIL_VIEW d
- where REQUESTOR = 'Steven King'
+    from PURCHASE_ORDER_DETAIL_VIEW d
+   where REQUESTOR = 'Steven King'
    and QUANTITY  > 7
    and UNITPRICE > 25.00
-/
+    /
       </copy>
     ````
   
@@ -212,9 +210,9 @@ columns (
     ````
     <copy>
     select JSON_QUERY(PO_DOCUMENT,'$.LineItems[0]' PRETTY) LINEITEMS
-  from PURCHASE_ORDER p
- where JSON_VALUE (PO_DOCUMENT,'$.Requestor') = 'Alexis Bull'
-/
+     from PURCHASE_ORDER p
+    where JSON_VALUE (PO_DOCUMENT,'$.Requestor') = 'Alexis Bull'
+     /
        
        </copy>
     ````
@@ -228,9 +226,9 @@ columns (
     ````
     <copy>
     select JSON_QUERY(PO_DOCUMENT,'$.LineItems[0]') LINEITEMS
-  from PURCHASE_ORDER p
- where JSON_VALUE(PO_DOCUMENT,'$.Requestor') = 'Alexis Bull'
-/
+     from PURCHASE_ORDER p
+     where JSON_VALUE(PO_DOCUMENT,'$.Requestor') = 'Alexis Bull'
+      /
 
 
        
@@ -243,9 +241,9 @@ columns (
      ````
     <copy>
     select JSON_QUERY(PO_DOCUMENT,'$.LineItems[0]') LINEITEMS
-  from PURCHASE_ORDER p
- where JSON_VALUE(PO_DOCUMENT,'$.Requestor') = 1600
-/
+     from PURCHASE_ORDER p
+    where JSON_VALUE(PO_DOCUMENT,'$.Requestor') = 1600
+     /
 
        
        </copy>
