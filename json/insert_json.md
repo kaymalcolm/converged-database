@@ -101,4 +101,5 @@ We can use Oracle SQL function json-mergepatch or PL/SQL object-type method json
     ![](./images/json_lab7_6.PNG " ")
 
 
+
 See an issue?  Please open up a request [here](https://github.com/oracle/learning-library/issues).
