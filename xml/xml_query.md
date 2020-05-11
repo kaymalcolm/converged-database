@@ -86,6 +86,7 @@
        /
        </copy>
     ````
-    ![](./images/xml_query_meth5.PNG " ")
-     ![](./images/xml_m5.PNG " ")
+    
+ ![](./images/xml_query_meth5.PNG " ")
+ ![](./images/xml_m5.PNG " ")
         
