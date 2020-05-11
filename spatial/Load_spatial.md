@@ -1,6 +1,6 @@
 # Oracle Spatial  
 
-**Create tables and spatial metadata:**
+**Load Data And Metadata:**
  
 
 ## Steps ##
