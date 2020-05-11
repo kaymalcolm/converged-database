@@ -43,8 +43,10 @@
    
 6. Create  table **CUSTOMERS**  and **WAREHOUSES** 
 
-    ````
-     <copy>
+     
+     ````
+       <copy>
+       
     CREATE TABLE CUSTOMERS
     ( 
     CUSTOMER_ID NUMBER(6, 0),
@@ -62,9 +64,11 @@
     LOCATION_ID   NUMBER(4,0), 
     WH_GEO_LOCATION       SDO_GEOMETRY
     );
-      </copy>
-
+    
+    </copy>
+    
     ````
+
 
   
 7.    Next we add Spatial metadata for the CUSTOMERS and WAREHOUSES tables
@@ -90,6 +94,7 @@
      -	 MDSYS.SDO-DIM-ARRAY: Constructor which holds the MDSYS.SDO-DIM-ELEMENT object,which in turn stores the extents of the spatial data  in each dimension (-180.0, 180.0), and a tolerance value (0.05). The tolerance is a round-off error value used by Oracle Spatial, and is in meters for longitude and latitude data. In this example, the tolerance is 5 mm.
      -	4326: Spatial reference system id (SRID): a foreign key to an Oracle dictionary table  (MDSYS.CS-SRS) tha  contains all the     supported coordinate systems. It is important to associate your customer's location to a coordinate system. In this example, 4326    corresponds to "Longitude / Latitude (WGS 84).".
  
+
 **Load data**
 
 
@@ -100,7 +105,7 @@
    -  we use sdo-geom.validate-geometry() to insert only valid geometries. 
 
      
- 2. Insert Data into **CUSTOMERS** Table
+ 8. Insert Data into **CUSTOMERS** Table
 
     ````
     <copy>
@@ -112,7 +117,7 @@
     </copy>
     ````
     
- 3. Manually load **warehouses** using the **SDO-GEOMETRY** constructor.
+ 9. Manually load **warehouses** using the **SDO-GEOMETRY** constructor.
 
     ````
     <copy>
