@@ -75,9 +75,12 @@ to_date('05-MAY-2020'),
     ![](./images/json_select_count1.PNG " ")
    
 
+ 
  **UPDATE**
-  We can use Oracle SQL function json-mergepatch or PL/SQL object-type method json-mergepatch() to update specific portions of a JSON document. In both cases we provide a JSON Merge Patch document, which declaratively specifies the changes to make to a a specified JSON document. JSON Merge Patch is an IETF standard.
-  
+ 
+ We can use Oracle SQL function json-mergepatch or PL/SQL object-type method json-mergepatch() to update specific portions of a JSON document. In both cases we provide a JSON Merge Patch document, which declaratively specifies the changes to make to a a specified JSON document. JSON Merge Patch is an IETF standard.
+ 
+ 
 3. Update Table.
       
    
