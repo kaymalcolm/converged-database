@@ -72,6 +72,7 @@ to_date('05-MAY-2020'),
     </copy>
     ````
     
+    
     ![](./images/json_select_count1.PNG " ")
    
 
@@ -97,6 +98,7 @@ We can use Oracle SQL function json-mergepatch or PL/SQL object-type method json
 
     </copy>
     ````
+    
     
     ![](./images/json_lab7_6.PNG " ")
 
