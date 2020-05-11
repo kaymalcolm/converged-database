@@ -1,3 +1,10 @@
+# Oracle Spatial  
+
+**Create tables and spatial metadata:**
+ 
+
+## Steps ##
+
 1. **Create Indexes**
    
   ````
@@ -8,5 +15,5 @@
    CREATE INDEX warehouses_sidx ON warehouses(WH_GEO_LOCATION)
     indextype is mdsys.spatial_index;  
    
-   </copy>
-    ````
+  </copy>
+  ````
