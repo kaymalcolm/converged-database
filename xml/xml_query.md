@@ -77,7 +77,7 @@
 
 6. Searching an xml document
    
-         ````
+      ````
         <copy>
        SELECT t.object_value.getclobval() FROM   purchaseorder t 
        WHERE  xmlexists('/PurchaseOrder[Reference/text()=$REFERENCE]' passing object_value, 'AsniHUNOLD-20141130' AS "REFERENCE" );
