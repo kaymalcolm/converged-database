@@ -189,11 +189,24 @@ columns (
   ![](./images/json_fun_view2.PNG " ")  
     
     
-    
+7. Run select query  
+
+    ````
+    <copy>
+    select PO_NUMBER, REFERENCE, INSTRUCTIONS, ITEMNO, UPCCODE, DESCRIPTION, QUANTITY, UNITPRICE
+  from PURCHASE_ORDER_DETAIL_VIEW d
+ where REQUESTOR = 'Steven King'
+   and QUANTITY  > 7
+   and UNITPRICE > 25.00
+/
+      </copy>
+    ````
+  
+  ![](./images/lab5_snap3.PNG " ")    
 
    **Notes** The above statements show how, once the relational views have been created, the full power of SQL can now be applied to JSON content, without requiring any knowledge of the structure of the JSON or how to manipulate JSON using SQL.
 
-7. Customer Purchase History Details  (with PRETTY)
+8. Customer Purchase History Details  (with PRETTY)
     
 
     ````
@@ -210,7 +223,7 @@ columns (
 
 
 
-8. Customer Purchase History Details  (without PRETTY)
+9. Customer Purchase History Details  (without PRETTY)
    
     ````
     <copy>
@@ -226,7 +239,7 @@ columns (
   
   ![](./images/json_fun_5b.PNG " ")  
 
-9. 
+10. 
      ````
     <copy>
     select JSON_QUERY(PO_DOCUMENT,'$.LineItems[0]') LINEITEMS
