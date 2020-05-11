@@ -17,7 +17,7 @@
     ````
 
    
-3. Create a  user **app_test**
+2. Create a  user **app_test**
 
     ````
     <copy>
@@ -25,7 +25,7 @@
     </copy>
     ````
     
-4. Grant dba privilage to **app_test** user.
+3. Grant dba privilage to **app_test** user.
 
     ````
     <copy>
@@ -33,7 +33,7 @@
     </copy>
     ````
    
-5. Connect Container **SPAGRAPDB** as user **app_test**
+4. Connect Container **SPAGRAPDB** as user **app_test**
 
     ````
     <copy>
@@ -41,12 +41,34 @@
     </copy>
     ````
    
+5. Create  table **CUSTOMERS**  and **WAREHOUSES** 
+
+    ````
+    <copy>
+    CREATE TABLE CUSTOMERS
+    ( 
+    CUSTOMER_ID NUMBER(6, 0),
+    CUST_FIRST_NAME VARCHAR2(20 CHAR),
+    CUST_LAST_NAME VARCHAR2(20 CHAR), 
+    GENDER VARCHAR2(1 CHAR), 
+    CUST_GEO_LOCATION SDO_GEOMETRY,
+    ACCOUNT_MGR_ID NUMBER(6, 0)
+    );
+    
+    CREATE TABLE WAREHOUSES
+    (
+    WAREHOUSE_ID    NUMBER(3,0), 
+    WAREHOUSE_NAME        VARCHAR2(35 CHAR), 
+    LOCATION_ID   NUMBER(4,0), 
+    WH_GEO_LOCATION       SDO_GEOMETRY
+    );
+    </copy>
+    ````
+
 6. Create  table **CUSTOMERS**  and **WAREHOUSES** 
 
-     
-     ````
-       <copy>
-       
+    ````
+    <copy>
     CREATE TABLE CUSTOMERS
     ( 
     CUSTOMER_ID NUMBER(6, 0),
@@ -64,30 +86,12 @@
     LOCATION_ID   NUMBER(4,0), 
     WH_GEO_LOCATION       SDO_GEOMETRY
     );
-    
-    </copy>
-    
-    ````
-
-
-  
-7.    Next we add Spatial metadata for the CUSTOMERS and WAREHOUSES tables
-      to the **USER-SDO-GEOM-METADATA** view. Each **SDO-GEOMETRY** column is registered
-      with a row in   **USER-SDO-GEOM-METADATA**.
-
-    ````
-    <copy>
-     EXECUTE SDO_UTIL.INSERT_SDO_GEOM_METADATA (sys_context('userenv','current_user'), -
-    'CUSTOMERS', 'CUST_GEO_LOCATION', -  SDO_DIM_ARRAY(SDO_DIM_ELEMENT('X',-180, 180, 0.05), - SDO_DIM_ELEMENT('Y', -90, 90, 0.05)),-  4326);
-
-     EXECUTE SDO_UTIL.INSERT_SDO_GEOM_METADATA (sys_context('userenv','current_user'), -
-     'WAREHOUSES', 'WH_GEO_LOCATION', - SDO_DIM_ARRAY(SDO_DIM_ELEMENT('X',-180, 180, 0.05), - SDO_DIM_ELEMENT('Y', -90, 90, 0.05)),-  4326);
       </copy>
-    
-       ````
+
+    ````
 
      
-     **Here is a description of the items that were entered:**
+**Here is a description of the items that were entered:**
 
      -	TABLE-NAME: Name of the table which contains the spatial data.
      -	COLUMN-NAME: Name of the SDO-GEOMETRY column which stores the spatial data.
@@ -135,8 +139,7 @@
    
 
 
-
-   **The elements of the constructor are:**
+**The elements of the constructor are:**
 
    -	2001: SDO-GTYPE attribute and it is set to 2001 when storing a two-dimensional single point such as a customer's location.
    -	4326: This is the spatial reference system ID (SRID): a foreign key to an Oracle dictionary table  (MDSYS.CS-SRS) that contains all the supported coordinate systems. It is important to associate your customer's location to a coordinate system. In this example, 4326 corresponds to "Longitude / Latitude (WGS 84)."
