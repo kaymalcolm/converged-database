@@ -11,20 +11,20 @@
      ````
     <copy>
 
-  Username: appxml
-  Password: Oracle_4U
-  PDB name: pdbjxl
-  PORT: 1530
-   </copy>
+   Username: appxml
+   Password: Oracle_4U
+   PDB name: pdbjxl
+   PORT: 1530
+    </copy>
     ````
 
 2. Getting the number of XML documents. There are many ways, following is one of them
    
        ````
-    <copy>
-    SELECT Count(*)FROM   purchaseorder p,  XMLTABLE('for $r in /PurchaseOrder return $r' passing object_value) t;    )
-    /
-    </copy>
+        <copy>
+       SELECT Count(*)FROM   purchaseorder p,  XMLTABLE('for $r in /PurchaseOrder return $r' passing object_value) t;    )
+        /
+       </copy>
     ````
 
       
@@ -77,14 +77,14 @@
 
 5. Searching an xml document
    
-       ````
-    <copy>
-    SELECT t.object_value.getclobval()
-    FROM   purchaseorder t
-    WHERE  xmlexists('/PurchaseOrder[Reference/text()=$REFERENCE]' passing object_value, 'AsniHUNOLD-20141130' AS "REFERENCE" );
-    )
-    /
-    </copy>
+         ````
+        <copy>
+        SELECT t.object_value.getclobval()
+       FROM   purchaseorder t
+       WHERE  xmlexists('/PurchaseOrder[Reference/text()=$REFERENCE]' passing object_value, 'AsniHUNOLD-20141130' AS "REFERENCE" );
+       )
+       /
+       </copy>
     ````
     ![](./images/xml_query_meth5.PNG " ")
      ![](./images/xml_m5.PNG " ")
