@@ -99,7 +99,7 @@ We can use Oracle SQL function json-mergepatch or PL/SQL object-type method json
     </copy>
     ````
     
-    ![](./images/insert_json.PNG " ")
+    ![](./images/json_lab7_6.PNG " ")
 
 
 
