@@ -20,45 +20,44 @@
     
     ![](./images/insert_json.PNG " ")
 
-2. Create a directory
+2. Insert a record.
     
-    We will create a directory which will point to the location where json dump file is stored-
-     
+         
     ````
     <copy>
     INSERT INTO purchase_order
-    VALUES (
+  VALUES (
     SYS_GUID(),
-    to_date('05-MAY-2020'),
+to_date('05-MAY-2020'),
     '{"PONumber"             : 10001,
-     "Reference"            : "SBELL-20141017",
-     "Requestor"            : "Sarah Bell",
-     "User"                 : "SBELL",
-     "CostCenter"           : "A50",
-     "ShippingInstructions" : {"name"    : "Sarah Bell",
-     "Address" : {"street"  : "200 Sporting Green",
-     "city"    : "South San Francisco",
-     "state"   : "CA",
-     "zipCode" : 99236,
-     "country" : "United States of America"},
-     "Phone"   : "983-555-6509"},
+      "Reference"            : "SBELL-20141017",
+      "Requestor"            : "Sarah Bell",
+      "User"                 : "SBELL",
+      "CostCenter"           : "A50",
+      "ShippingInstructions" : {"name"    : "Sarah Bell",
+                  "Address" : {"street"  : "200 Sporting Green",
+                              "city"    : "South San Francisco",
+                              "state"   : "CA",
+                              "zipCode" : 99236,
+                        "country" : "United States of America"},
+                        "Phone"   : "983-555-6509"},
       "Special Instructions" : "Courier",
       "LineItems"            : [{"ItemNumber" : 1,
-     "Part"       : {"Description" : "Making the Grade",
-      "UnitPrice"   : 20,
-      "UPCCode"     : 27616867759},
-      "Quantity"   : 8.0},
-     {"ItemNumber" : 2,
-       "Part"       : {"Description" : "Nixon",
-       "UnitPrice"   : 19.95,
-        "UPCCode"     : 717951002396},
-       "Quantity"   : 5},
-      {"ItemNumber" : 3,
+             "Part"       : {"Description" : "Making the Grade",
+                             "UnitPrice"   : 20,
+                             "UPCCode"     : 27616867759},
+             "Quantity"   : 8.0},
+                              {"ItemNumber" : 2,
+             "Part"       : {"Description" : "Nixon",
+                                "UnitPrice"   : 19.95,
+                                "UPCCode"     : 717951002396},
+                                 "Quantity"   : 5},
+                                {"ItemNumber" : 3,
           "Part"       : {"Description" : "Eric Clapton: Best Of 1981-1999",
-         "UnitPrice"   : 19.95,
-         "UPCCode"     : 75993851120},
-          "Quantity"   : 5.0}
-          ]}');
+                               "UnitPrice"   : 19.95,
+                               "UPCCode"     : 75993851120},
+                                 "Quantity"   : 5.0}
+                                ]}');
 
     
              </copy>
