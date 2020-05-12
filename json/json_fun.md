@@ -1,7 +1,11 @@
 # Oracle JSON  
 
-## Steps:
 
+
+## Steps:#
+
+
+ **Usage of JSON Functions**
 
 1. Customers who ordered products from specific Geo location   
 
