@@ -1,7 +1,7 @@
 
 # Oracle Spatial  
 
-**Perform location-based queries**
+**Usage of Spatial Functions**
 
  # Steps
 
