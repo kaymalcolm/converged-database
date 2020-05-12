@@ -44,10 +44,10 @@
      AND sdo_nn
      (c.cust_geo_location, w.wh_geo_location, 'sdo_num_res=5  unit=mile', 1) = 'TRUE'
      ORDER BY distance_in_miles;
-
-       </copy>
-       ````
-
+     </copy>
+      ````
+   
+  
      ![](./images/spatail_m2.PNG " ")
 
 **Notes:**
