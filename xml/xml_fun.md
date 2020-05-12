@@ -3,6 +3,8 @@
 
 ## Steps:
 
+ **Usage of XML Functions**
+
 1.	Get the list of the customer and their purchased information from a geo graphical location 
     
     XMLEXISTS is an SQL/XML operator that you can use to query XML values in SQL, in a regular query I can use the xmlexists function to look if a specific value is present in an xmltype column
