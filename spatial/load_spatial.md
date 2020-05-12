@@ -1,9 +1,11 @@
 # Oracle Spatial  
 
-**Load Data And Metadata:**
  
 
 ## Steps ##
+
+**Load Data And Metadata:**
+
 
 1. Login to the PDB:
    
