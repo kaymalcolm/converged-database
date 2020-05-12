@@ -79,10 +79,10 @@
 
 **Notes **
 
-- SDO_BATCH_SIZE is a tunable parameter that may affect your query's performance. SDO_NN internally calculates that number of distances at a time. The initial batch of rows returned may not satisfy the constraints in the WHERE clause, so the number of rows specified by SDO_BATCH_SIZE is continuously returned until all the constraints in the WHERE clause are satisfied. You should choose a SDO_BATCH_SIZE that initially returns the number of rows likely to satisfy the constraints in your WHERE clause.
-- The UNIT parameter used within the SDO_NN operator specifies the unit of measure of the SDO_NN_DISTANCE parameter. The default unit is the unit of measure associated with the data. For longitude and latitude data, the default is meters.
+- SDO-BATCH-SIZE is a tunable parameter that may affect your query's performance. SDO-NN internally calculates that number of distances at a time. The initial batch of rows returned may not satisfy the constraints in the WHERE clause, so the number of rows specified by SDO-BATCH-SIZE is continuously returned until all the constraints in the WHERE clause are satisfied. You should choose a SDO-BATCH-SIZE that initially returns the number of rows likely to satisfy the constraints in your WHERE clause.
+- The UNIT parameter used within the SDO-NN operator specifies the unit of measure of the SDO-NN-DISTANCE parameter. The default unit is the unit of measure associated with the data. For longitude and latitude data, the default is meters.
 - c.gender = 'F' and rownum< 6 are the additional constraints in the WHERE clause. The rownum< 6 clause is necessary to limit the number of results returned to fewer than 6.
-- The ORDER BY DISTANCE_IN_MILES clause ensures that the distances are returned in order, with the shortest distance first and the distances measured in miles.
+- The ORDER BY DISTANCE-IN-MILES clause ensures that the distances are returned in order, with the shortest distance first and the distances measured in miles.
 
 
 4. Find all the customers within 100 miles of warehouse named 'Sussex, NJ'
