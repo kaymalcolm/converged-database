@@ -22,7 +22,7 @@
      ![](./images/spatial_m1.PNG " ")
 
 
-       **Notes on Query 1:**
+**Notes on Query 1:**
 
        
       - The SDO-NN operator returns the SDO-NUM-RES value of the customers from the CUSTOMERS table who are closest to warehouse 3. The first argument to SDO-NN (c.cust-geo-location in the example above) is the column to search. The second argument to SDO-NN (w.wh-geo-location in the example above) is the location you want to find the neighbors nearest to. No assumptions should be made about the order of the returned results. For example, the first row returned is not guaranteed to be the customer closest to warehouse 3. If two or more customers are an equal distance from the warehouse, then either of the customers may be returned on subsequent calls to SDO_NN.
@@ -49,11 +49,10 @@
        ````
 
 
-
-   **Notes on Query 2:**
+**Notes on Query 2:**
 
     -	The SDO-NN-DISTANCE operator is an ancillary operator to the SDO_NN operator; it can only be used within the SDO-NN operator. 
-    The argument for this operator is a number that matches the number specified as the last argument of SDO-NN; in this example it is 1. There is no hidden meaning to this argument, it is simply a tag. If SDO-NN-DISTANCE() is specified, you can order the results by distance and guarantee that the first row returned is the closest. If the data you are querying is stored as longitude and latitude, the default unit for SDO-NN-DISTANCE is meters.
+    The argument for this operator is a number that matches the number specified as the last argument of SDO-NN; in this example it is   1. There is no hidden meaning to this argument, it is simply a tag. If SDO-NN-DISTANCE() is specified, you can order the results by distance and guarantee that the first row returned is the closest. If the data you are querying is stored as longitude and latitude, the default unit for SDO-NN-DISTANCE is meters.
     -	The SDO-NN operator also has a UNIT parameter that determines the unit of measure returned by  SDO-NN-DISTANCE.
     - The ORDER BY DISTANCE clause ensures that the distances are returned in order, 
       with the shortest   distance first.
@@ -77,7 +76,7 @@
     </copy>
      ````
 
-   **Notes on Query 3:**
+ **Notes on Query 3:**
 
    - SDO_BATCH_SIZE is a tunable parameter that may affect your query's performance. SDO_NN internally calculates that number of distances at a time. The initial batch of rows returned may not satisfy the constraints in the WHERE clause, so the number of rows specified by SDO_BATCH_SIZE is continuously returned until all the constraints in the WHERE clause are satisfied. You should choose a SDO_BATCH_SIZE that initially returns the number of rows likely to satisfy the constraints in your WHERE clause.
    - The UNIT parameter used within the SDO_NN operator specifies the unit of measure of the SDO_NN_DISTANCE parameter. The default unit is the unit of measure associated with the data. For longitude and latitude data, the default is meters.
