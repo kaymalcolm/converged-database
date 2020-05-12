@@ -3,7 +3,7 @@
 
 
 
- ##Steps
+ ## Steps
  
  **Usage of Spatial Functions**
 
