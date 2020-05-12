@@ -2,9 +2,9 @@
 # Oracle Spatial  
 
 
-## Steps ##
+ # Steps
 
-**Perform location-based queries**
+   **Perform location-based queries**
 
 1. Find the five customers closest to the warehouse whose warehouse ID is 'Southlake,TX'
    
@@ -22,10 +22,8 @@
     ![](./images/spatail_m1.PNG " ") 
 
 
-   **Notes:**
-
-       
-- The SDO-NN operator returns the SDO-NUM-RES value of the customers from the CUSTOMERS table who are closest to warehouse 3. The first argument to SDO-NN (c.cust-geo-location in the example above) is the column to search. The second argument to SDO-NN (w.wh-geo-location in the example above) is the location you want to find the neighbors nearest to. No assumptions should be made about the order of the returned results. For example, the first row returned is not guaranteed to be the customer closest to warehouse 3. If two or more customers are an equal distance from the warehouse, then either of the customers may be returned on subsequent calls to SDO_NN.
+   **Notes**
+ - The SDO-NN operator returns the SDO-NUM-RES value of the customers from the CUSTOMERS table who are closest to warehouse 3. The first argument to SDO-NN (c.cust-geo-location in the example above) is the column to search. The second argument to SDO-NN (w.wh-geo-location in the example above) is the location you want to find the neighbors nearest to. No assumptions should be made about the order of the returned results. For example, the first row returned is not guaranteed to be the customer closest to warehouse 3. If two or more customers are an equal distance from the warehouse, then either of the customers may be returned on subsequent calls to SDO_NN.
 - When using the SDO-NUM-RES parameter, no other constraints are used in the WHERE clause. SDO_NUM_RES takes only proximity into account. For example, if you added a criterion to the WHERE clause because you wanted the five closest female customers, and four of the five closest customers are male, the query above would return one row. This behavior is specific to the SDO-NUM-RES parameter, and its results may not be what you are looking for. You will learn how to find the five closest female customers in the discussion of query 3.
 
 
@@ -50,8 +48,7 @@
   
      ![](./images/spatail_m2.PNG " ")
 
-    **Notes:**
-
+    **Notes**
  -	The SDO-NN-DISTANCE operator is an ancillary operator to the SDO_NN operator; it can only be used within the SDO-NN operator. 
  - The argument for this operator is a number that matches the number specified as the last argument of SDO-NN; in this example it is   1. There is no hidden meaning to this argument, it is simply a tag. If SDO-NN-DISTANCE() is specified, you can order the results by distance and guarantee that the first row returned is the closest. If the data you are querying is stored as longitude and latitude, the default unit for SDO-NN-DISTANCE is meters.
  -	The SDO-NN operator also has a UNIT parameter that determines the unit of measure returned by  SDO-NN-DISTANCE.
@@ -77,8 +74,9 @@
      ````
      ![](./images/spatail_m3.PNG " ")
 
-   **Notes **
-
+    
+    **Notes**
+   
 - SDO-BATCH-SIZE is a tunable parameter that may affect your query's performance. SDO-NN internally calculates that number of distances at a time. The initial batch of rows returned may not satisfy the constraints in the WHERE clause, so the number of rows specified by SDO-BATCH-SIZE is continuously returned until all the constraints in the WHERE clause are satisfied. You should choose a SDO-BATCH-SIZE that initially returns the number of rows likely to satisfy the constraints in your WHERE clause.
 - The UNIT parameter used within the SDO-NN operator specifies the unit of measure of the SDO-NN-DISTANCE parameter. The default unit is the unit of measure associated with the data. For longitude and latitude data, the default is meters.
 - c.gender = 'F' and rownum< 6 are the additional constraints in the WHERE clause. The rownum< 6 clause is necessary to limit the number of results returned to fewer than 6.
@@ -102,6 +100,7 @@
 
 
    **Notes** 
+   
  -The SDO-WITHIN-DISTANCE operator returns the customers from the customers table that are within 100   miles of warehouse 3. 
      The first argument to SDO-WITHIN-DISTANCE (c.cust-geo-location in the example above) is the column to search. 
      The second argument to SDO-WITHIN-DISTANCE (w.wh-geo-location in the example above) is the location you want to determine the distances from. No assumptions should be made about the order of the returned results. For example, the first row returned is not guaranteed to be the customer closest to warehouse 3.
@@ -127,7 +126,6 @@
     ![](./images/spatail_m5.PNG " ")
      
   **Notes**
-
 - The SDO_GEOM.SDO-DISTANCE function computes the exact distance between the customer's location and warehouse 3. 
 - The first argument to SDO-GEOM.SDO-DISTANCE (c.cust-geo-location in the example above) contains the customer's location  whose  distance from warehouse 3 is to be computed. 
 - The second argument to SDO-WITHIN-DISTANCE (w.wh-geo-location in the example above) is the location of warehouse 3, whose distance from the customer's location is to be computed.
