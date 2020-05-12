@@ -19,10 +19,10 @@
       </copy>
       ````
 
-     ![](./images/spatial_m1.PNG " ")
+![](./images/spatail_m1.PNG " ") 
 
 
-**Notes on Query 1:**
+ **Notes on Query 1:**
 
        
       - The SDO-NN operator returns the SDO-NUM-RES value of the customers from the CUSTOMERS table who are closest to warehouse 3. The first argument to SDO-NN (c.cust-geo-location in the example above) is the column to search. The second argument to SDO-NN (w.wh-geo-location in the example above) is the location you want to find the neighbors nearest to. No assumptions should be made about the order of the returned results. For example, the first row returned is not guaranteed to be the customer closest to warehouse 3. If two or more customers are an equal distance from the warehouse, then either of the customers may be returned on subsequent calls to SDO_NN.
@@ -48,7 +48,7 @@
        </copy>
        ````
 
-![](./images/spatial_m2.PNG " ")
+![](./images/spatail_m2.PNG " ")
 
 **Notes on Query 2:**
 
@@ -76,7 +76,7 @@
 
     </copy>
      ````
-![](./images/spatial_m3.PNG " ")
+![](./images/spatail_m3.PNG " ")
 
  **Notes on Query 3:**
 
@@ -99,7 +99,7 @@
          </copy>
       ````
 
-![](./images/spatial_m4.PNG " ")
+![](./images/spatail_m4.PNG " ")
 
  **Notes on Query 4:** 
    -	The SDO-WITHIN-DISTANCE operator returns the customers from the customers table 
@@ -127,7 +127,7 @@
    ORDER BY distance_in_miles;
     </copy>
      ````
-![](./images/spatial_m5.PNG " ")
+![](./images/spatail_m5.PNG " ")
      
  **Notes on Query 5:**
 
