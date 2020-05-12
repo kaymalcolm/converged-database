@@ -1,10 +1,10 @@
 
 # Oracle Spatial  
 
+**Perform location-based queries**
 
  # Steps
 
-   **Perform location-based queries**
 
 1. Find the five customers closest to the warehouse whose warehouse ID is 'Southlake,TX'
    
