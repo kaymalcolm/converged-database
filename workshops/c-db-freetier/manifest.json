@@ -6,7 +6,7 @@
             "partnumber": "Ennnnn_01",
             "publisheddate": "03/10/2020",
             "contentid": "12nnnn",
-            "filename": "../../intro/intro_json.md"
+            "filename": "../../c-db/intro_cdb.md"
         },
         {         
             "title": " Env Setup",
@@ -14,31 +14,5 @@
             "partnumber": "Ennnnn_01",
             "publisheddate": "03/10/2020",
             "contentid": "12nnnn",
-            "filename": "/labs/setup.md"
-        },
-        {         
-            "title": "Lab:1 Load JSON Data",
-            "description": "",
-            "partnumber": "Ennnnn_01",
-            "publisheddate": "03/10/2020",
-            "contentid": "12nnnn",
-            "filename": "../../labs/load_json.md"
-        },
-        {         
-            "title": "Lab:2 Insert and Update JSON Data",
-            "description": "",
-            "partnumber": "Ennnnn_01",
-            "publisheddate": "03/10/2020",
-            "contentid": "12nnnn",
-            "filename": "../../labs/insert_json.md"
-        },
-        {         
-            "title": "Lab:3 Usage of JSON Functions",
-            "description": "",
-            "partnumber": "Ennnnn_01",
-            "publisheddate": "03/10/2020",
-            "contentid": "12nnnn",
-            "filename": "../../labs/json_fun.md"
+            "filename": "../../c-db/setup.md"
         }
-                 ]
-}
