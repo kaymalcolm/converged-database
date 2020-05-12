@@ -1,10 +1,12 @@
 # Oracle Spatial  
 
-**Create tables and spatial metadata:**
- 
+
 
 ## Steps ##
 
+**Create tables and spatial metadata:**
+ 
+ 
 1. **Create Indexes**
    
   ````
