@@ -6,7 +6,7 @@
 ## Steps:#
 
 
- **Insert and Update on JSON data**
+ **Load JSON data**
 
 1. Login to PDB: Below are the details-
    
