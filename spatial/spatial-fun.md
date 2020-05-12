@@ -48,6 +48,7 @@
        </copy>
        ````
 
+![](./images/spatial_m2.PNG " ")
 
 **Notes on Query 2:**
 
@@ -75,6 +76,7 @@
 
     </copy>
      ````
+![](./images/spatial_m3.PNG " ")
 
  **Notes on Query 3:**
 
@@ -97,6 +99,7 @@
          </copy>
       ````
 
+![](./images/spatial_m4.PNG " ")
 
  **Notes on Query 4:** 
    -	The SDO-WITHIN-DISTANCE operator returns the customers from the customers table 
@@ -124,7 +127,7 @@
    ORDER BY distance_in_miles;
     </copy>
      ````
-
+![](./images/spatial_m5.PNG " ")
      
  **Notes on Query 5:**
 
