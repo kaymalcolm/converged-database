@@ -1,10 +1,11 @@
 
 # Oracle Spatial  
 
-**Usage of Spatial Functions**
+
 
  # Steps
-
+ 
+ **Usage of Spatial Functions**
 
 1. Find the five customers closest to the warehouse whose warehouse ID is 'Southlake,TX'
    
