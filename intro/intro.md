@@ -46,4 +46,24 @@ If you don't have an Oracle Cloud account then you can quickly and easily sign u
 -	Credits can be used on all eligible Cloud Platform and Infrastructure services for the next 30 days
 -	Your credit card will only be used for verification purposes and will not be charged unless you 'Upgrade to Paid' in My Services
 
+Click here to request your trial account: [https://www.oracle.com/cloud/free](https://www.oracle.com/cloud/free)
+
+## Workshops
+- [JSON](https://laxmi-oss.github.io/converged-database/workshops/json-freetier/)
+- [XML](https://laxmi-oss.github.io/converged-database/workshops/xml-freetier/)
+- [SPATIAL](https://laxmi-oss.github.io/converged-database/workshops/spatial-freetier/)
+
+
+## Product Pages
+- [Oracle Database 19c](https://www.oracle.com/database/)
+
+
+
+## Acknowledgements
+
+- **Authors/Contributors** - Brian Hengen,Balasubramanian Ramamoorthy,Arvind Bhope.
+
+### Issues?
+Please submit an issue on our [issues](https://github.com/oracle/learning-library/issues) page. We review it regularly.
+
 
