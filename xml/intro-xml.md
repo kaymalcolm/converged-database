@@ -24,7 +24,7 @@ Oracle XML DB allows an organization to manage XML content in the same way that 
  Watch the video below for an overview of Oracle XML
  [](youtube:lGQvxPCYR2c)
 
-![](./images/xml_db_image.PNG " ")https://www.oracle.com/technetwork/database-features/xmldb/overview/xmldb-ppt-12cr1-1964805.pdf
+![](./images/xml_db_image.PNG " ")(https://www.oracle.com/technetwork/database-features/xmldb/overview/xmldb-ppt-12cr1-1964805.pdf)
 
 - [I have a Freetier or Oracle Cloud account](https://oracle.github.io/learning-library/data-management-library/database/multitenant/freetier/index.html)
 - [I have an account from SSWorkshop](https://oracle.github.io/learning-library/data-management-library/database/multitenant/ssworkshop/index.html)
@@ -38,7 +38,6 @@ If you don't have an Oracle Cloud account then you can quickly and easily sign u
 
 Click here to request your trial account: [https://www.oracle.com/cloud/free](https://www.oracle.com/cloud/free)
 
-- [Oracle XML](https://www.oracle.com/technetwork/database-features/xmldb/overview/xmldb-ppt-12cr1-1964805.pdf)
   
 ## Acknowledgements
 
