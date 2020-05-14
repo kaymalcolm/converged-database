@@ -1,3 +1,5 @@
+[](../../ssworkshop/manifest.json)
+
 # Workshop Introduction and Overview
 
 ## Introduction to Oracle Converged Database
