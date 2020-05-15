@@ -30,7 +30,6 @@ All those bottlenecks (Data Consistency ,Data Security, Availability, Scalabilit
 All of these capabilities create better and informed decisions by increasing the value of information and reducing the time to business insight.
 
 
- - [Converged DB](https://laxmi-oss.github.io/converged-database/freetier/)
 
  **Watch the video below for an overview of Oracle Converged Database Architecture**
 
