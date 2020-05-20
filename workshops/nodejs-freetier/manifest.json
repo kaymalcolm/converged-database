@@ -6,7 +6,7 @@
             "partnumber": "Ennnnn_01",
             "publisheddate": "03/10/2020",
             "contentid": "12nnnn",
-            "filename": "../../intro/intro-nodejs.md"
+            "filename": "../../nodejs/intro-nodejs.md"
         },
         {         
             "title": " Env Setup",
@@ -14,7 +14,7 @@
             "partnumber": "Ennnnn_01",
             "publisheddate": "03/10/2020",
             "contentid": "12nnnn",
-            "filename": "/labs/env-setup-nodejs.md"
+            "filename": "../../nodejs/env-setup-nodejs.md"
         },
         {         
             "title": "Lab:1 Node-js Rest API",
@@ -22,7 +22,7 @@
             "partnumber": "Ennnnn_01",
             "publisheddate": "03/10/2020",
             "contentid": "12nnnn",
-            "filename": "../../labs/nodejs_lab.md"
+            "filename": "../../nodejs/nodejs_lab.md"
         }
                  ]
 }
