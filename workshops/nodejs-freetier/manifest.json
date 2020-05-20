@@ -1,0 +1,28 @@
+{
+    "tutorials": [
+        {         
+            "title": "Introduction and Overview",
+            "description": "Introduction to JSON Workshop",
+            "partnumber": "Ennnnn_01",
+            "publisheddate": "03/10/2020",
+            "contentid": "12nnnn",
+            "filename": "../../intro/intro-nodejs.md"
+        },
+        {         
+            "title": " Env Setup",
+            "description": "Env Setup",
+            "partnumber": "Ennnnn_01",
+            "publisheddate": "03/10/2020",
+            "contentid": "12nnnn",
+            "filename": "/labs/env-setup-nodejs.md"
+        },
+        {         
+            "title": "Lab:1 Node-js Rest API",
+            "description": "",
+            "partnumber": "Ennnnn_01",
+            "publisheddate": "03/10/2020",
+            "contentid": "12nnnn",
+            "filename": "../../labs/nodejs_lab.md"
+        }
+                 ]
+}
